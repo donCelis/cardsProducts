@@ -118,6 +118,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  transition: ease-in-out 0.2s;
 }
 .s:hover,
 .m:hover,
@@ -138,6 +139,7 @@ body {
   border: 1px solid black;
   cursor: pointer;
   opacity: 0.5;
+  transition: ease-in-out 0.2s;
 }
 .lineB:hover{
   opacity: 1;
