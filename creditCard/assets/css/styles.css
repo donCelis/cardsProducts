@@ -1,0 +1,58 @@
+*{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: sans-serif;
+   background: rgb(211, 233, 252);
+}
+.formPay{
+   margin: 0 auto;
+   width: 50%;
+   background: white;
+   padding: 20px;
+   margin-top: 200px;
+   border-radius: 10px;
+}
+.imgCard{
+   margin: 0 auto;
+   width: 70%;
+   margin-bottom: 40px;  
+}
+.imgCard img{
+   margin-top: -40%;
+   width: 100%;
+}
+.caps{
+   text-transform: capitalize;
+}
+.column{
+   display: flex;
+   flex-flow: column wrap;
+}
+.row{
+   display: flex;
+   flex-flow: row wrap;
+}
+.in{
+   padding: 15px 0;
+   width: 100%;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   border: 1px solid rgba(44, 62, 80, 0.2);
+   border-radius: 5px;
+}
+.expirationDate{
+   justify-content: space-between;
+}
+.send{
+   background: rgb(41, 128, 185);
+   width: 100%;
+   color: white;
+   padding: 10px 0;
+   font-size: 1.2em;
+   margin-top: 20px;
+   border-radius: 5px;
+}

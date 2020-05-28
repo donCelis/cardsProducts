@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulario Tarjeta de Crédito</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <form class="formPay">
+      <div class="imgCard">
+        <img src="assets/img/creditCard.png" alt="Credit Card" />
+      </div>
+      <div class="numberCard column">
+        <label class="caps" for="cardNumber">card number</label>
+        <input class="in" type="number" name="cardNumber" />
+      </div>
+
+      <div class="nameCard column">
+        <label class="caps" for="name">card name</label>
+        <input class="in" type="text" name="name" />
+      </div>
+
+      <div class="expirationDate row">
+        <div class="column">
+          <label class="caps" for="time">expiration date</label>
+          <div class="row">
+            <select class="caps" name="months">
+              <option value="enero">january</option>
+              <option value="febrero">february</option>
+              <option value="marzo">march</option>
+              <option value="abril">april</option>
+              <option value="junio">june</option>
+            </select>
+            
+            <select name="years">
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019" selected>2019</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="code column">
+          <label class="caps" for="cvv">cvv</label>
+          <input type="number" name="cvv" />
+        </div>
+      </div>
+
+      <input class="caps send" type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
