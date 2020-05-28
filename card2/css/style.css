@@ -167,6 +167,9 @@ body {
   font-size: 0.7em;
   font-weight: 700;
   cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .btnPrin:hover {
   background: rgb(192, 57, 43);
