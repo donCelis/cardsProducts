@@ -49,9 +49,11 @@ body {
   margin: 30px 0;
 }
 /* Diseño */
+.container{
+  height: 100vh;
+}
 .producto {
   width: 70%;
-  margin: 0 auto;
   background: white;
 }
 .producto .foto {
