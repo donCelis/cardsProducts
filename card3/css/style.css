@@ -1,0 +1,114 @@
+/*Resetar los estilos del navegador*/
+/*selector universal*/
+*{
+  margin: 0;/*Margen externo*/
+  padding: 0;/*Margen interno*/
+  border: 0;/*Borde de cualquier caja*/
+  box-sizing: border-box;/*Evitar el desbordamiento de cajas*/
+}
+body{
+  background: #ecf0f1;/*Color de fondo*/
+  font-family: sans-serif;/*Cambiar la letra*/
+}
+/*Clases compartidas*/
+/*Propiedas para elementos padre*/
+.row{
+  display: flex;/*Para organizar las cajas en fila hablando de flexbox*/
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.alignCenter{
+  align-items: center; /*Para alinear al centro los elementos de la fila*/
+}
+.stretch{
+  align-items: stretch; /*Hace que todas las cajas tengan le mismo alto*/
+}
+.spaceBt{
+  justify-content: space-between; /*Distribuir las hijos con respecto al padre*/
+}
+.justifyCenter{
+  justify-content: center;
+}
+.imgFluid{
+  width: 100%;/*Ancho flexible*/
+  vertical-align: middle; /*Centrar elementos verticalmente*/
+  object-fit: cover;/*Para que una imagen rellene*/
+}
+/*Propiedas para elementos hijos hablando de flexbox
+  order -> establecer un orden los elementos
+  flex-basis -> establecer el ancho del elemento (toda fila mide 100%)
+*/
+
+/*Propiedad para sombra
+  box-shadow: valorx valory desenfoque color;
+*/
+
+/*
+  Color con transparencia
+  rgba(0,0,0,0)
+  el alfa va de 0 a 1
+*/
+
+/*Diseño*/
+.item{
+  margin: 15px;
+  background: white;
+  flex-basis: 20%;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;/*Redondear una esquinas*/
+}
+/*Estilos por anidamiento
+  Se usan cuando una etiqueta no tiene clase
+  first-child -> primer elemento
+  last-child -> primer elemento
+  nth-child(2) -> elemento especifico
+*/
+.item header{
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+/* .item:first-child header{
+  background: rgb(155, 89, 182);
+}
+.item:nth-child(2) header{
+  background: rgb(52, 152, 219);
+}
+.item:nth-child(3) header{
+  background: rgb(26, 188, 156);
+}
+.item:last-child header{
+  background: rgb(231, 76, 60);
+} */
+.item .morado{
+  background: rgb(155, 89, 182);
+}
+.item .verde{
+  background: rgb(26, 188, 156);
+}
+.item .azul{
+  background: rgb(52, 152, 219);
+}
+.item .rojo{
+  background: rgb(231, 76, 60);
+}
+.item header div{
+  background: rgba(255, 255, 255, 0.2);
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.item header div img{
+  padding: 10px;
+}
+.info{
+  padding: 15px;
+}
